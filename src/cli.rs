@@ -32,6 +32,7 @@ pub struct App {
 #[derive(Clone, Copy, PartialEq, Eq)]
 pub enum Color {
     Always,
+    Sometimes,
     Never,
 }
 
@@ -146,6 +147,7 @@ impl App {
                 if name == b"color" {
                     match value {
                         b"always" => app.color = Color::Always,
+                        b"sometimes" => app.color = Color::Sometimes,
                         b"never" => app.color = Color::Never,
                         _ => {
                             error!(b"invalid argument \'", value, b"\' for \'", name, b"'\n");
