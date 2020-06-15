@@ -12,7 +12,7 @@ dependencies = [
  "itoa 0.4.5 (registry+https://github.com/rust-lang/crates.io-index)",
  "libc 0.2.67 (registry+https://github.com/rust-lang/crates.io-index)",
  "unicode-segmentation 1.6.0 (registry+https://github.com/rust-lang/crates.io-index)",
- "veneer 0.1.0 (git+https://github.com/saethlin/veneer)",
+ "veneer 0.1.0 (git+https://github.com/joshuarli/veneer?branch=chore/update-to-syscall-package-that-builds)",
 ]
 
 [[package]]
@@ -26,9 +26,9 @@ version = "0.2.67"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 
 [[package]]
-name = "syscall"
-version = "0.2.1"
-source = "registry+https://github.com/rust-lang/crates.io-index"
+name = "sc"
+version = "0.2.2"
+source = "git+https://github.com/joshuarli/syscall.rs?branch=chore/use-llvm-asm#cdf7fcf430d932a5583aa5c4341c3f559ea01569"
 
 [[package]]
 name = "unicode-segmentation"
@@ -38,17 +38,17 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 [[package]]
 name = "veneer"
 version = "0.1.0"
-source = "git+https://github.com/saethlin/veneer#af98ca2d27955e91f00d56922e9f969b06963922"
+source = "git+https://github.com/joshuarli/veneer?branch=chore/update-to-syscall-package-that-builds#de1db1161c4c6076cb87d6cb987a682e89b38c71"
 dependencies = [
  "bitflags 1.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
  "libc 0.2.67 (registry+https://github.com/rust-lang/crates.io-index)",
- "syscall 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)",
+ "sc 0.2.2 (git+https://github.com/joshuarli/syscall.rs?branch=chore/use-llvm-asm)",
 ]
 
 [metadata]
 "checksum bitflags 1.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "cf1de2fe8c75bc145a2f577add951f8134889b4795d47466a54a5c846d691693"
 "checksum itoa 0.4.5 (registry+https://github.com/rust-lang/crates.io-index)" = "b8b7a7c0c47db5545ed3fef7468ee7bb5b74691498139e4b3f6a20685dc6dd8e"
 "checksum libc 0.2.67 (registry+https://github.com/rust-lang/crates.io-index)" = "eb147597cdf94ed43ab7a9038716637d2d1bf2bc571da995d0028dec06bd3018"
-"checksum syscall 0.2.1 (registry+https://github.com/rust-lang/crates.io-index)" = "dae2c4de039bf338dd96f46621f20222c4101045dac5403b46f472608cb5b556"
+"checksum sc 0.2.2 (git+https://github.com/joshuarli/syscall.rs?branch=chore/use-llvm-asm)" = "<none>"
 "checksum unicode-segmentation 1.6.0 (registry+https://github.com/rust-lang/crates.io-index)" = "e83e153d1053cbb5a118eeff7fd5be06ed99153f00dbcd8ae310c5fb2b22edc0"
-"checksum veneer 0.1.0 (git+https://github.com/saethlin/veneer)" = "<none>"
+"checksum veneer 0.1.0 (git+https://github.com/joshuarli/veneer?branch=chore/update-to-syscall-package-that-builds)" = "<none>"

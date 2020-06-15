@@ -6,10 +6,6 @@
 #[no_mangle]
 pub extern "C" fn rust_eh_personality() {}
 
-#[lang = "eh_unwind_resume"]
-#[no_mangle]
-pub extern "C" fn rust_eh_unwind_resume() {}
-
 #[panic_handler]
 fn panic(_info: &core::panic::PanicInfo) -> ! {
     let _ = veneer::syscalls::kill(0, libc::SIGABRT);
